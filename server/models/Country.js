@@ -26,7 +26,7 @@ class Country {
         } 
         return new Country (response.rows[0])
     }
-    static async create(data) {
+    static async create(data) { //static is used for putting it or using ALL the data
         const { name, capital, population, languages} = data //check country doesn't already exist
         const existingCountry = await db.query('SELECT name FROM country WHERE LOWER(name) = LOWER($1);',
             [name]
@@ -43,7 +43,7 @@ class Country {
         let response = await db.query('DELETE FROM country WHERE name = $1 RETURNING *;',
             [this.name])
             return new Country(response.rows[0])
-    }//for patch and update
+    }//for patch and update, $ are parameter placeholders
     async update(data){
         const name = data.name || this.name
         const capital = data.capital || this.capital

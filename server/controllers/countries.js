@@ -45,8 +45,8 @@ const update = async (req, res) => {
     const name = req.params.name.toLowerCase()
     try {
         const country = await Country.getOneByCountryName(name)
-        const result = await country.update(req.body)
-        res.status(200).send(result)
+        const updateCountry = await country.update(req.body)
+        res.status(200).send(updateCountry)
     } catch (err) {
         res.status(404).send({error: err})
     }
