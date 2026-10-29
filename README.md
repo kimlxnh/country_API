@@ -1,7 +1,6 @@
 # Country API
 
-##Overview 
-
+## Overview 
 
 A country API tha† allows you to add, remove, and view countries.
 
@@ -13,7 +12,7 @@ A country API tha† allows you to add, remove, and view countries.
 
 - __npm__
 
-- A cloud-based DBM hosting platform (e.g. [Supabase](https://supabase.com/), [Neon](https://neon.com/), etc...)
+- A cloud-based database management hosting platform (e.g. [Supabase](https://supabase.com/), [Neon](https://neon.com/), etc...)
 
 ### Installation requirements
 1. Clone the repo by running:  `git clone your_github_url`
@@ -52,12 +51,6 @@ A country API tha† allows you to add, remove, and view countries.
 6. Run the server
     - Run `npm run dev` to run the server in development mode
     - Run `npm run start` to run the server in production mode
-
-
-
-
-
-
 
 ## Database Schema
 
