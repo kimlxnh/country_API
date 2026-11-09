@@ -2,7 +2,7 @@
 
 ## Overview 
 
-A country API tha† allows you to add, remove, and view countries.
+A country API that allows you to add, remove, and view countries.
 
 ## Getting Started
 
